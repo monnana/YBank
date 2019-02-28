@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YBank</string>
+    <string name="home_title">Y-Bank</string>
+    <string name="scanf">扫一扫</string>
+    <string name="mine">我  的</string>
+    <string name="business">业务预约</string>
+    <string name="card">鼓鼓的卡包</string>
+
+    <string name="bt_homepage">首页</string>
+    <string name="bt_life">生活</string>
+    <string name="bt_shopping">商城</string>
+    <string name="bt_business">业务</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.y_bank.monna.ybank.view.CustomTitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:titlebar_type="10"
+    app:title="@string/home_title"
+    app:scan="@string/scanf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.y_bank.monna.ybank.activity.MainActivity">
+
+</com.y_bank.monna.ybank.view.CustomTitleBar>

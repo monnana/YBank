@@ -1,0 +1,43 @@
+//该模块为应用程序模块，可以直接运行
+apply plugin: 'com.android.application'
+
+android {
+    //指定项目的编译版本，使用Android 7.1系统的SDK编译
+    compileSdkVersion 25
+    //指定项目构建工具的版本
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.y_bank.monna.ybank"
+        //最低兼容到Android 4.0版本
+        minSdkVersion 15
+        //指定已做过充分测试的目标版本
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        //指定生成正式版安装文件的配置
+        release {
+            //代码不进行混淆
+            minifyEnabled false
+            /*
+             * 指定混淆的规则文件，proguard-android.txt为默认的混淆文件，定义了一些通用的混淆规则；
+             * proguard-rules.pro文件位于当前项目的根目录下，定义一些项目特有的混淆规则。
+             */
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//定义项目的依赖关系
+dependencies {
+    //将libs目录下所有.jar后缀的文件都添加到项目的构建路径当中
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

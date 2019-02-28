@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <!--状态栏背景颜色-->
+    <color name="colorPrimaryDark">#cdd1dc</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="master">#ffcc33</color>
+    <color name="titleName">#504f4f</color>
+    <color name="white">#ffffff</color>
+    <color name="bt_font">#cacaca</color>
+</resources>

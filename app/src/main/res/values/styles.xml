@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- 界面的样式风格 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!--状态栏背景-->
+    </style>
+    
+    <!--底部按钮样式-->
+    <style name="bt_font">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bt_font</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+</resources>
